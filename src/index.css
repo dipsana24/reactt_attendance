@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #111;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+.muted {
+  color: #666;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  min-width: 180px;
+  flex: 1;
+}
+.input:focus {
+  border-color: #999;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #f3f3f3;
+}
+.btn.primary {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #000;
+}
+.btn.danger {
+  background: #ffecec;
+  border-color: #ffbdbd;
+  color: #a40000;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.table th,
+.table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.table th {
+  color: #666;
+  font-size: 12px;
+}
+
+.pill {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  font-weight: 700;
+}
+.pill.present {
+  background: #eafff0;
+  border-color: #b7f5c8;
+}
+.pill.absent {
+  background: #fff6df;
+  border-color: #ffe2a6;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.modal {
+  width: min(420px, 100%);
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid #e6e6e6;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalHeader h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.label {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 700;
+}
+
+.empty {
+  margin-top: 12px;
+  color: #666;
+  text-align: center;
+}
