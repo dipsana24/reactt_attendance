@@ -2,7 +2,7 @@
   "name": "attendance-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dipsana24.github.io/react_attendance",
+  "homepage": "https://dipsana24.github.io/reactt_attendance",
   "type": "module",
   "scripts": {
     "dev": "vite",
